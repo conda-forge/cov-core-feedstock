@@ -11,6 +11,18 @@ Summary: plugin core for use by pytest-cov, nose-cov and nose2-cov
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cov-core-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cov-core-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/cov-core-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cov-core-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cov-core-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cov-core-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cov-core/badges/version.svg)](https://anaconda.org/conda-forge/cov-core)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cov-core/badges/downloads.svg)](https://anaconda.org/conda-forge/cov-core)
+
 Installing cov-core
 ===================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `cov-core` available on your platf
 ```
 conda search cov-core --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cov-core-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cov-core-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/cov-core-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cov-core-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cov-core-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cov-core-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cov-core/badges/version.svg)](https://anaconda.org/conda-forge/cov-core)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cov-core/badges/downloads.svg)](https://anaconda.org/conda-forge/cov-core)
 
 
 Updating cov-core-feedstock
