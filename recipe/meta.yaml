@@ -1,27 +1,22 @@
-{%set name = "cov-core" %}
-{%set version = "1.15.0" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "4a14c67d520fda9d42b0da6134638578caae1d374b9bb462d8de00587dba764c" %}
+{% set version = "1.15.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: cov-core
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.io/packages/source/c/cov-core/cov-core-{{ version }}.tar.gz
+  sha256: 4a14c67d520fda9d42b0da6134638578caae1d374b9bb462d8de00587dba764c
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
+    - pip
     - python
-    - setuptools
-
   run:
     - python
     - coverage >=3.6
